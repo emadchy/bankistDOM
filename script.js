@@ -289,3 +289,17 @@ const slider = function () {
   });
 };
 slider();
+
+document.addEventListener('DOMContentLoaded',function(e){
+  console.log('HTML PARSED and DOM Tree built!',e);
+});
+
+window.addEventListener('load', function(e ){
+  console.log('Page full loaded', e);
+});
+
+// window.addEventListener('beforeunload', function(e){
+//   e.preventDefault();
+//   console.log(e);
+//   e.returnValue='message';
+// });
